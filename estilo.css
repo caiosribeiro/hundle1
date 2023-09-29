@@ -10,6 +10,7 @@ body{
 	color: #00252e;
 	font-family: Open Sans;
 	font-weight: 400;
+	width: 100%;
 }
 
 button{
@@ -32,13 +33,19 @@ button:hover{
 }
 
 /*------------COMEÇO--------*/
+header{
+	width: 100%;
+}
+
 header button{
 	float: right;
 	border: 1px solid #ff52bf;
 	border-radius: 50px;
 	color: 	#ff52bf;
 	background: white;
-	width: 10%;
+	width: 12%;
+	position: relative;
+	right: 10%;
 }
 
 header button:hover{
@@ -86,6 +93,10 @@ header p {
 .sombra{
 	font-size: 18px;
 	opacity: 0.5;
+}
+
+.ajuste{
+	width: 90%;
 }
 
 #divisorTop1{
@@ -144,6 +155,7 @@ footer button{
 	border-radius: 5px;
 	color: white;
 	background: #ff52bf;
+	border: 2px solid blue;
 }
 
 footer input{
@@ -159,12 +171,6 @@ footer input:hover{
 i:hover{
 	cursor: pointer;
 	color: cyan;
-}
-
-#btn{
-	position: relative;
-	left: 340px;
-	bottom: 57px;
 }
 
 #result{
@@ -186,3 +192,108 @@ i:hover{
 }
 
 
+@media only screen and (max-width: 991px){
+	button{
+		width: 35%;
+	}
+}
+
+
+@media only screen and (max-width: 958px){
+	header button{
+		width: 15%;
+	}	
+}
+
+@media only screen and (max-width: 770px){
+	header button{
+		width: 20%;
+	}
+
+	button{
+		width: 45%;
+	}
+
+	#btn{
+		width: 20%;
+	}
+}
+
+@media only screen and (max-width: 578px){
+	header button{
+		top: 50px;
+		right: 50%;
+		width: 25%;
+	}
+
+	button{
+		width: 55%;
+	}
+
+	#btn{
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 464px){
+	header button{
+		top: -100px;
+		width: 30%;
+	}
+
+	button{
+		width: 65%;
+	}
+
+	#btn{
+		width: 30%;
+	}
+}
+
+
+@media only screen and (max-width: 386px){
+	header button{
+		width: 35%;
+		right: 30%;
+	}
+
+	button{
+		width: 77%;
+	}
+
+	#btn{
+		width: 35%;
+	}
+
+	footer input{
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 332px){
+	header button{
+		width: 40%;
+	}
+
+	button{
+		width: 87%;
+	}
+
+	#btn{
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 293px){
+	header button{
+		width: 45%;
+	}
+
+	button{
+		width: 100%;
+	}
+
+	#btn{
+		width: 50%;
+	}
+}
